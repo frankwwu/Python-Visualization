@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_79b1e0e4cba91ed28da04f756700279b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_79b1e0e4cba91ed28da04f756700279b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_79b1e0e4cba91ed28da04f756700279b = L.map(
+                "map_79b1e0e4cba91ed28da04f756700279b",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9466f25b93d86cd8f74fcf52b441b97b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9466f25b93d86cd8f74fcf52b441b97b.addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+            var circle_marker_0bc118b3318fb95ec771c6792f0a73ff = L.circleMarker(
+                [50.8599, -177.7299],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.899999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_3247bf56f734b5991972de486fd9662d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8e2d0e24360b0c6d283618a4f6fbd87 = $(`<div id="html_a8e2d0e24360b0c6d283618a4f6fbd87" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 136 km SSW of Adak, Alaska<br><b>Magnitude:</b> 3.3<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_3247bf56f734b5991972de486fd9662d.setContent(html_a8e2d0e24360b0c6d283618a4f6fbd87);
+            
+        
+
+        circle_marker_0bc118b3318fb95ec771c6792f0a73ff.bindPopup(popup_3247bf56f734b5991972de486fd9662d)
+        ;
+
+        
+    
+    
+            var circle_marker_f40cce381fe3f755794a2478519119f8 = L.circleMarker(
+                [18.5571666666667, -66.152],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_2639ae0e1e73499c0a6de56799689f00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e4caeab45785d892462e99068b6ae65 = $(`<div id="html_4e4caeab45785d892462e99068b6ae65" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 11 km NNW of San Juan, Puerto Rico<br><b>Magnitude:</b> 3<br><b>Depth:</b> 73.82 km</div>`)[0];
+                popup_2639ae0e1e73499c0a6de56799689f00.setContent(html_4e4caeab45785d892462e99068b6ae65);
+            
+        
+
+        circle_marker_f40cce381fe3f755794a2478519119f8.bindPopup(popup_2639ae0e1e73499c0a6de56799689f00)
+        ;
+
+        
+    
+    
+            var circle_marker_648d35a20cfc8ba6ad3324d2f05de45c = L.circleMarker(
+                [39.6983337402344, -123.134498596191],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.43, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_0bef8452ce59e83a3701d3c31dac6352 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f904bc5d1af5efa915dc1fc17d88f0bc = $(`<div id="html_f904bc5d1af5efa915dc1fc17d88f0bc" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 14 km SSE of Covelo, CA<br><b>Magnitude:</b> 2.81<br><b>Depth:</b> 4.71999979019165 km</div>`)[0];
+                popup_0bef8452ce59e83a3701d3c31dac6352.setContent(html_f904bc5d1af5efa915dc1fc17d88f0bc);
+            
+        
+
+        circle_marker_648d35a20cfc8ba6ad3324d2f05de45c.bindPopup(popup_0bef8452ce59e83a3701d3c31dac6352)
+        ;
+
+        
+    
+    
+            var circle_marker_5ea8d818a3e8a907d8c8a5b2a8cf2422 = L.circleMarker(
+                [50.9985, -177.4954],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.2, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_b37ce17360200e1b0bfb423dac54c1d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_170be416d478c91345e651122f0fceec = $(`<div id="html_170be416d478c91345e651122f0fceec" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 114 km SSW of Adak, Alaska<br><b>Magnitude:</b> 3.4<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_b37ce17360200e1b0bfb423dac54c1d0.setContent(html_170be416d478c91345e651122f0fceec);
+            
+        
+
+        circle_marker_5ea8d818a3e8a907d8c8a5b2a8cf2422.bindPopup(popup_b37ce17360200e1b0bfb423dac54c1d0)
+        ;
+
+        
+    
+    
+            var circle_marker_e2b8c2fd98fbf3bff3c3856a1b93f5c1 = L.circleMarker(
+                [54.1694, -162.4745],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_ff934abbe349807d2bc81737136dad42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bf4e728bc9f685da3cda2dd036fc5e9 = $(`<div id="html_6bf4e728bc9f685da3cda2dd036fc5e9" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 97 km SE of False Pass, Alaska<br><b>Magnitude:</b> 5<br><b>Depth:</b> 35 km</div>`)[0];
+                popup_ff934abbe349807d2bc81737136dad42.setContent(html_6bf4e728bc9f685da3cda2dd036fc5e9);
+            
+        
+
+        circle_marker_e2b8c2fd98fbf3bff3c3856a1b93f5c1.bindPopup(popup_ff934abbe349807d2bc81737136dad42)
+        ;
+
+        
+    
+    
+            var circle_marker_8ad2a4d63298b85f0a80468798ea74c0 = L.circleMarker(
+                [-9.2495, 66.7514],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.1, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_eb43f52faf58d195f26059e85fe2f8f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4650e46a9427c6be8ad86caf1961fbb8 = $(`<div id="html_4650e46a9427c6be8ad86caf1961fbb8" style="width: 100.0%; height: 100.0%;"><b>Location:</b> Mid-Indian Ridge<br><b>Magnitude:</b> 5.7<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_eb43f52faf58d195f26059e85fe2f8f7.setContent(html_4650e46a9427c6be8ad86caf1961fbb8);
+            
+        
+
+        circle_marker_8ad2a4d63298b85f0a80468798ea74c0.bindPopup(popup_eb43f52faf58d195f26059e85fe2f8f7)
+        ;
+
+        
+    
+    
+            var circle_marker_b8c4415f5e9f9a618f2d92ed63e74423 = L.circleMarker(
+                [50.9787, -177.5087],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.8, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_3c825f1dc60a86ec1a9b04287dce8565 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1486a9a216926996e44189f87e7de3a0 = $(`<div id="html_1486a9a216926996e44189f87e7de3a0" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 116 km SSW of Adak, Alaska<br><b>Magnitude:</b> 3.6<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_3c825f1dc60a86ec1a9b04287dce8565.setContent(html_1486a9a216926996e44189f87e7de3a0);
+            
+        
+
+        circle_marker_b8c4415f5e9f9a618f2d92ed63e74423.bindPopup(popup_3c825f1dc60a86ec1a9b04287dce8565)
+        ;
+
+        
+    
+    
+            var circle_marker_43b335024cf4742f2b115974e2c8096e = L.circleMarker(
+                [50.8638, -177.5754],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.899999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_275fc412a08d96c5ddd9ace43c6fb42b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a22dfbef918f150feb5702335323a88a = $(`<div id="html_a22dfbef918f150feb5702335323a88a" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 130 km SSW of Adak, Alaska<br><b>Magnitude:</b> 3.3<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_275fc412a08d96c5ddd9ace43c6fb42b.setContent(html_a22dfbef918f150feb5702335323a88a);
+            
+        
+
+        circle_marker_43b335024cf4742f2b115974e2c8096e.bindPopup(popup_275fc412a08d96c5ddd9ace43c6fb42b)
+        ;
+
+        
+    
+    
+            var circle_marker_1338fd5ec3784f569d9d2edda0af0f21 = L.circleMarker(
+                [50.9476, -177.5363],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.5, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_02691a4e3f3c5df0bcdae7da89416886 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b41c25cd83e1afa716f9eb93db0dcf4e = $(`<div id="html_b41c25cd83e1afa716f9eb93db0dcf4e" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 120 km SSW of Adak, Alaska<br><b>Magnitude:</b> 2.5<br><b>Depth:</b> 15.4 km</div>`)[0];
+                popup_02691a4e3f3c5df0bcdae7da89416886.setContent(html_b41c25cd83e1afa716f9eb93db0dcf4e);
+            
+        
+
+        circle_marker_1338fd5ec3784f569d9d2edda0af0f21.bindPopup(popup_02691a4e3f3c5df0bcdae7da89416886)
+        ;
+
+        
+    
+    
+            var circle_marker_52804ceb2b11d1d9057d7af8fab532d5 = L.circleMarker(
+                [51.0142, -177.5177],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.899999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_16e8ed03719b867cd9ee848df0fbfe85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c368bacfb2e2436a7f6a1dbf77dbd6f = $(`<div id="html_1c368bacfb2e2436a7f6a1dbf77dbd6f" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 113 km SSW of Adak, Alaska<br><b>Magnitude:</b> 5.3<br><b>Depth:</b> 24.528 km</div>`)[0];
+                popup_16e8ed03719b867cd9ee848df0fbfe85.setContent(html_1c368bacfb2e2436a7f6a1dbf77dbd6f);
+            
+        
+
+        circle_marker_52804ceb2b11d1d9057d7af8fab532d5.bindPopup(popup_16e8ed03719b867cd9ee848df0fbfe85)
+        ;
+
+        
+    
+    
+            var circle_marker_c7d996ec4c82da9a9aec68bfb06933be = L.circleMarker(
+                [31.4093333, -115.465],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.43, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_29b2d31c7a8b944f94af4559f856f0f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fee777b604ac2f2197f345d3df397fe = $(`<div id="html_9fee777b604ac2f2197f345d3df397fe" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 95 km SSW of Alberto Oviedo Mota, B.C., MX<br><b>Magnitude:</b> 2.81<br><b>Depth:</b> 13.28 km</div>`)[0];
+                popup_29b2d31c7a8b944f94af4559f856f0f8.setContent(html_9fee777b604ac2f2197f345d3df397fe);
+            
+        
+
+        circle_marker_c7d996ec4c82da9a9aec68bfb06933be.bindPopup(popup_29b2d31c7a8b944f94af4559f856f0f8)
+        ;
+
+        
+    
+    
+            var circle_marker_c523d211f17c4c484a71e43004e0727d = L.circleMarker(
+                [51.0366, -177.5501],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.1, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_c0227efb1f0a1daf36074e29296a4ecf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc905ebd835cacd1fbb3509cd7a1cfa1 = $(`<div id="html_fc905ebd835cacd1fbb3509cd7a1cfa1" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 112 km SW of Adak, Alaska<br><b>Magnitude:</b> 5.7<br><b>Depth:</b> 18.783 km</div>`)[0];
+                popup_c0227efb1f0a1daf36074e29296a4ecf.setContent(html_fc905ebd835cacd1fbb3509cd7a1cfa1);
+            
+        
+
+        circle_marker_c523d211f17c4c484a71e43004e0727d.bindPopup(popup_c0227efb1f0a1daf36074e29296a4ecf)
+        ;
+
+        
+    
+    
+            var circle_marker_82d819ee6e24a5adc00387601fb5bfd5 = L.circleMarker(
+                [-20.2478, -70.339],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.700000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_c36cbdaa42bae17d99be02c3319e68d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f10ec0e221e62645488f20afe843dd65 = $(`<div id="html_f10ec0e221e62645488f20afe843dd65" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 19 km W of Puerto, Chile<br><b>Magnitude:</b> 4.9<br><b>Depth:</b> 33.8 km</div>`)[0];
+                popup_c36cbdaa42bae17d99be02c3319e68d5.setContent(html_f10ec0e221e62645488f20afe843dd65);
+            
+        
+
+        circle_marker_82d819ee6e24a5adc00387601fb5bfd5.bindPopup(popup_c36cbdaa42bae17d99be02c3319e68d5)
+        ;
+
+        
+    
+    
+            var circle_marker_5c3773f44ff21c877bfabcabd40fed3c = L.circleMarker(
+                [40.2755012512207, -124.557830810547],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.01, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_85b4df425aa3cc439ec5580a35ad7292 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_185b9ef7f6ea846259156d9645715942 = $(`<div id="html_185b9ef7f6ea846259156d9645715942" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 24 km W of Petrolia, CA<br><b>Magnitude:</b> 2.67<br><b>Depth:</b> 18.7900009155273 km</div>`)[0];
+                popup_85b4df425aa3cc439ec5580a35ad7292.setContent(html_185b9ef7f6ea846259156d9645715942);
+            
+        
+
+        circle_marker_5c3773f44ff21c877bfabcabd40fed3c.bindPopup(popup_85b4df425aa3cc439ec5580a35ad7292)
+        ;
+
+        
+    
+    
+            var circle_marker_d795ba3fad252a62b1f3a74cdc04cd51 = L.circleMarker(
+                [50.7357, -177.5072],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.100000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_816b5a3aa97aa035d6d73114ae9c07a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e51ba8983011b64ffe10217f0799ed7 = $(`<div id="html_7e51ba8983011b64ffe10217f0799ed7" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 140 km SSW of Adak, Alaska<br><b>Magnitude:</b> 2.7<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_816b5a3aa97aa035d6d73114ae9c07a1.setContent(html_7e51ba8983011b64ffe10217f0799ed7);
+            
+        
+
+        circle_marker_d795ba3fad252a62b1f3a74cdc04cd51.bindPopup(popup_816b5a3aa97aa035d6d73114ae9c07a1)
+        ;
+
+        
+    
+    
+            var circle_marker_ac949106f27920c54e0427a49cbc0ce7 = L.circleMarker(
+                [-35.5068, -106.2525],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_12916b8017db22ac2a771cc7782f99a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0ff7c3ece5b854f3cda2757400b36cc = $(`<div id="html_e0ff7c3ece5b854f3cda2757400b36cc" style="width: 100.0%; height: 100.0%;"><b>Location:</b> southern East Pacific Rise<br><b>Magnitude:</b> 5<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_12916b8017db22ac2a771cc7782f99a5.setContent(html_e0ff7c3ece5b854f3cda2757400b36cc);
+            
+        
+
+        circle_marker_ac949106f27920c54e0427a49cbc0ce7.bindPopup(popup_12916b8017db22ac2a771cc7782f99a5)
+        ;
+
+        
+    
+    
+            var circle_marker_9c36c47077bee1daa9bc4bcaf597b9fc = L.circleMarker(
+                [13.2295, -87.7383],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.100000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_59e79f312936aed239c2fbc9ec112f15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94c7483d1920895ea184d89615874ed4 = $(`<div id="html_94c7483d1920895ea184d89615874ed4" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 11 km SW of Amapala, Honduras<br><b>Magnitude:</b> 4.7<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_59e79f312936aed239c2fbc9ec112f15.setContent(html_94c7483d1920895ea184d89615874ed4);
+            
+        
+
+        circle_marker_9c36c47077bee1daa9bc4bcaf597b9fc.bindPopup(popup_59e79f312936aed239c2fbc9ec112f15)
+        ;
+
+        
+    
+    
+            var circle_marker_67f74aac7f58b71e519aa92e49afc8ab = L.circleMarker(
+                [36.6464996337891, -121.283332824707],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.38, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_075d6771b635e18589406da3b5ec49cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81ae9b3ac269f37ed4175adde4c6833d = $(`<div id="html_81ae9b3ac269f37ed4175adde4c6833d" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 16 km S of Tres Pinos, CA<br><b>Magnitude:</b> 2.46<br><b>Depth:</b> 5.42000007629395 km</div>`)[0];
+                popup_075d6771b635e18589406da3b5ec49cf.setContent(html_81ae9b3ac269f37ed4175adde4c6833d);
+            
+        
+
+        circle_marker_67f74aac7f58b71e519aa92e49afc8ab.bindPopup(popup_075d6771b635e18589406da3b5ec49cf)
+        ;
+
+        
+    
+    
+            var circle_marker_e5e89b987a3b0307f6ed6b37640c9493 = L.circleMarker(
+                [44.3267, 147.6155],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.700000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_9ae62a5d7bcc5bde60bacddff068f5c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_299d3529dfb531689785c92e4974592c = $(`<div id="html_299d3529dfb531689785c92e4974592c" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 92 km NE of Shikotan, Russia<br><b>Magnitude:</b> 4.9<br><b>Depth:</b> 103.509 km</div>`)[0];
+                popup_9ae62a5d7bcc5bde60bacddff068f5c5.setContent(html_299d3529dfb531689785c92e4974592c);
+            
+        
+
+        circle_marker_e5e89b987a3b0307f6ed6b37640c9493.bindPopup(popup_9ae62a5d7bcc5bde60bacddff068f5c5)
+        ;
+
+        
+    
+    
+            var circle_marker_bac1464420dd77e23515f4ab4f725f63 = L.circleMarker(
+                [40.3946647644043, -124.918830871582],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.06, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_deccdd02d6bb233bfc558e8094d93394 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_008ce6fb921fef8415b531247a79a648 = $(`<div id="html_008ce6fb921fef8415b531247a79a648" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 54 km WNW of Petrolia, CA<br><b>Magnitude:</b> 3.02<br><b>Depth:</b> 19.4899997711182 km</div>`)[0];
+                popup_deccdd02d6bb233bfc558e8094d93394.setContent(html_008ce6fb921fef8415b531247a79a648);
+            
+        
+
+        circle_marker_bac1464420dd77e23515f4ab4f725f63.bindPopup(popup_deccdd02d6bb233bfc558e8094d93394)
+        ;
+
+        
+    
+    
+            var circle_marker_ade53b2487648d892324565405b52e95 = L.circleMarker(
+                [58.536, -152.2387],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.100000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_7155524ad73efc684d6434c23617ca53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_367d8fe5dfe556eb7772d816db5c501f = $(`<div id="html_367d8fe5dfe556eb7772d816db5c501f" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 66 km NE of Aleneva, Alaska<br><b>Magnitude:</b> 2.7<br><b>Depth:</b> 35.1 km</div>`)[0];
+                popup_7155524ad73efc684d6434c23617ca53.setContent(html_367d8fe5dfe556eb7772d816db5c501f);
+            
+        
+
+        circle_marker_ade53b2487648d892324565405b52e95.bindPopup(popup_7155524ad73efc684d6434c23617ca53)
+        ;
+
+        
+    
+    
+            var circle_marker_f0fd0d212c8a9dabd7ea17f40e728f6f = L.circleMarker(
+                [40.2723350524902, -124.654998779297],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.07, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_d0216aa280c684cf684bfb3b8931ed55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5611983e65b694c5c8650c8ad3ff4e4 = $(`<div id="html_b5611983e65b694c5c8650c8ad3ff4e4" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 32 km W of Petrolia, CA<br><b>Magnitude:</b> 2.69<br><b>Depth:</b> 11.6000003814697 km</div>`)[0];
+                popup_d0216aa280c684cf684bfb3b8931ed55.setContent(html_b5611983e65b694c5c8650c8ad3ff4e4);
+            
+        
+
+        circle_marker_f0fd0d212c8a9dabd7ea17f40e728f6f.bindPopup(popup_d0216aa280c684cf684bfb3b8931ed55)
+        ;
+
+        
+    
+    
+            var circle_marker_3f51e592cdcc0141d578f8c1175cfc7d = L.circleMarker(
+                [40.3655014038086, -124.738334655762],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.99, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_03b6fa3a74ab3e2273479a6b52b29b52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c6b07c2dcc19f97a6fecf37fca165dc = $(`<div id="html_9c6b07c2dcc19f97a6fecf37fca165dc" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 39 km WNW of Petrolia, CA<br><b>Magnitude:</b> 3.33<br><b>Depth:</b> 19.2999992370605 km</div>`)[0];
+                popup_03b6fa3a74ab3e2273479a6b52b29b52.setContent(html_9c6b07c2dcc19f97a6fecf37fca165dc);
+            
+        
+
+        circle_marker_3f51e592cdcc0141d578f8c1175cfc7d.bindPopup(popup_03b6fa3a74ab3e2273479a6b52b29b52)
+        ;
+
+        
+    
+    
+            var circle_marker_21e31b06b9f13d80a2da9586ed26b52a = L.circleMarker(
+                [44.494, 7.0343],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.7, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_06cd0694bb2b48667adddec8aa0cc893 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85fcdc0b588f9be6e3864a608c54a727 = $(`<div id="html_85fcdc0b588f9be6e3864a608c54a727" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 2 km NW of Prazzo Superiore, Italy<br><b>Magnitude:</b> 3.9<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_06cd0694bb2b48667adddec8aa0cc893.setContent(html_85fcdc0b588f9be6e3864a608c54a727);
+            
+        
+
+        circle_marker_21e31b06b9f13d80a2da9586ed26b52a.bindPopup(popup_06cd0694bb2b48667adddec8aa0cc893)
+        ;
+
+        
+    
+    
+            var circle_marker_d27f1bd13347625422e8cad860ecb4b1 = L.circleMarker(
+                [40.341667175293, -124.985832214355],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.4399999999999995, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_344971ada865f4ac82315518cceb8a68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0b68d9486182ea36ad48cf1b45e9b02 = $(`<div id="html_d0b68d9486182ea36ad48cf1b45e9b02" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 59 km WNW of Petrolia, CA<br><b>Magnitude:</b> 2.48<br><b>Depth:</b> 4.3600001335144 km</div>`)[0];
+                popup_344971ada865f4ac82315518cceb8a68.setContent(html_d0b68d9486182ea36ad48cf1b45e9b02);
+            
+        
+
+        circle_marker_d27f1bd13347625422e8cad860ecb4b1.bindPopup(popup_344971ada865f4ac82315518cceb8a68)
+        ;
+
+        
+    
+    
+            var circle_marker_97c8e67383dca18e4f3de7398213519f = L.circleMarker(
+                [-0.9861, 99.5542],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.399999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_aafcd355a25f2388bc969f2c10869ab9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ced04da8d8d664e0cbdaa8bf80946d7 = $(`<div id="html_6ced04da8d8d664e0cbdaa8bf80946d7" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 74 km WSW of Pariaman, Indonesia<br><b>Magnitude:</b> 4.8<br><b>Depth:</b> 69.766 km</div>`)[0];
+                popup_aafcd355a25f2388bc969f2c10869ab9.setContent(html_6ced04da8d8d664e0cbdaa8bf80946d7);
+            
+        
+
+        circle_marker_97c8e67383dca18e4f3de7398213519f.bindPopup(popup_aafcd355a25f2388bc969f2c10869ab9)
+        ;
+
+        
+    
+    
+            var circle_marker_04b3e03933cc7f01874128370ed88349 = L.circleMarker(
+                [19.6812, -70.4604],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.299999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_3d44bcac6c2146ff1d6471ca1daac8d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d1e6a0bc459c6e9a2a1d4435d9ad828 = $(`<div id="html_3d1e6a0bc459c6e9a2a1d4435d9ad828" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 5 km NNW of Jamao al Norte, Dominican Republic<br><b>Magnitude:</b> 4.1<br><b>Depth:</b> 27.852 km</div>`)[0];
+                popup_3d44bcac6c2146ff1d6471ca1daac8d3.setContent(html_3d1e6a0bc459c6e9a2a1d4435d9ad828);
+            
+        
+
+        circle_marker_04b3e03933cc7f01874128370ed88349.bindPopup(popup_3d44bcac6c2146ff1d6471ca1daac8d3)
+        ;
+
+        
+    
+    
+            var circle_marker_56768916d115765a3626b497cd80ea07 = L.circleMarker(
+                [50.8648, -177.4831],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.100000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_5cbf449fbf1610ca0d99df00f2351d9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f10b11cc66309276df146388d03874e2 = $(`<div id="html_f10b11cc66309276df146388d03874e2" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 126 km SSW of Adak, Alaska<br><b>Magnitude:</b> 2.7<br><b>Depth:</b> 16.7 km</div>`)[0];
+                popup_5cbf449fbf1610ca0d99df00f2351d9b.setContent(html_f10b11cc66309276df146388d03874e2);
+            
+        
+
+        circle_marker_56768916d115765a3626b497cd80ea07.bindPopup(popup_5cbf449fbf1610ca0d99df00f2351d9b)
+        ;
+
+        
+    
+    
+            var circle_marker_154bba3e206386e82f5c9c818502e656 = L.circleMarker(
+                [40.420166015625, -124.782333374023],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.68, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_346ce264467cdde26d5af40e821bf8c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7424243b089a6b4f6a18729c2955bb95 = $(`<div id="html_7424243b089a6b4f6a18729c2955bb95" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 43 km WNW of Petrolia, CA<br><b>Magnitude:</b> 3.56<br><b>Depth:</b> 11.6499996185303 km</div>`)[0];
+                popup_346ce264467cdde26d5af40e821bf8c8.setContent(html_7424243b089a6b4f6a18729c2955bb95);
+            
+        
+
+        circle_marker_154bba3e206386e82f5c9c818502e656.bindPopup(popup_346ce264467cdde26d5af40e821bf8c8)
+        ;
+
+        
+    
+    
+            var circle_marker_530630bd80799dff2353f76b6f3ac3bf = L.circleMarker(
+                [40.2939987182617, -124.519165039062],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.99, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_20b5e99dbcc1d0aa4ab6f42dff309996 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fa0693b16caf814c4e2feb7f022a352 = $(`<div id="html_0fa0693b16caf814c4e2feb7f022a352" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 20 km W of Petrolia, CA<br><b>Magnitude:</b> 3.33<br><b>Depth:</b> 18.8799991607666 km</div>`)[0];
+                popup_20b5e99dbcc1d0aa4ab6f42dff309996.setContent(html_0fa0693b16caf814c4e2feb7f022a352);
+            
+        
+
+        circle_marker_530630bd80799dff2353f76b6f3ac3bf.bindPopup(popup_20b5e99dbcc1d0aa4ab6f42dff309996)
+        ;
+
+        
+    
+    
+            var circle_marker_c2aa1ce7a1d6c8787c06dcf39319f46b = L.circleMarker(
+                [-6.6413, 103.8588],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.299999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_5c2abdca80e7187d45d16660f1513d05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_749afd21c0b30b989cffd6292b85cff1 = $(`<div id="html_749afd21c0b30b989cffd6292b85cff1" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 205 km SW of Bandar Lampung, Indonesia<br><b>Magnitude:</b> 5.1<br><b>Depth:</b> 36.781 km</div>`)[0];
+                popup_5c2abdca80e7187d45d16660f1513d05.setContent(html_749afd21c0b30b989cffd6292b85cff1);
+            
+        
+
+        circle_marker_c2aa1ce7a1d6c8787c06dcf39319f46b.bindPopup(popup_5c2abdca80e7187d45d16660f1513d05)
+        ;
+
+        
+    
+    
+            var circle_marker_553a5d9e09661e977604685ac3866b89 = L.circleMarker(
+                [19.0938333333333, -64.8218333333333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.05, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_25a47c3471b8a7ce2a69afff56fa4e00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48006468eb593e164acd76fc141159f0 = $(`<div id="html_48006468eb593e164acd76fc141159f0" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 84 km N of Charlotte Amalie, U.S. Virgin Islands<br><b>Magnitude:</b> 3.35<br><b>Depth:</b> 78.27 km</div>`)[0];
+                popup_25a47c3471b8a7ce2a69afff56fa4e00.setContent(html_48006468eb593e164acd76fc141159f0);
+            
+        
+
+        circle_marker_553a5d9e09661e977604685ac3866b89.bindPopup(popup_25a47c3471b8a7ce2a69afff56fa4e00)
+        ;
+
+        
+    
+    
+            var circle_marker_4aeaab7d07afd47cb30d373e09426bc6 = L.circleMarker(
+                [40.2944984436035, -124.494499206543],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.22, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_b38e8a0526c33a3680c3c40a9ae5d4b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f24dbcfd3337ed1244f9d93c29ee68a1 = $(`<div id="html_f24dbcfd3337ed1244f9d93c29ee68a1" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 18 km W of Petrolia, CA<br><b>Magnitude:</b> 2.74<br><b>Depth:</b> 18.6100006103516 km</div>`)[0];
+                popup_b38e8a0526c33a3680c3c40a9ae5d4b1.setContent(html_f24dbcfd3337ed1244f9d93c29ee68a1);
+            
+        
+
+        circle_marker_4aeaab7d07afd47cb30d373e09426bc6.bindPopup(popup_b38e8a0526c33a3680c3c40a9ae5d4b1)
+        ;
+
+        
+    
+    
+            var circle_marker_f19071805388f1fb01068880ac0dfa8f = L.circleMarker(
+                [40.3359985351562, -124.681831359863],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.74, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_e036783f87c593dab967749f6014dc5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e75feeeceb74f365073c38a44dcede3 = $(`<div id="html_9e75feeeceb74f365073c38a44dcede3" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 34 km WNW of Petrolia, CA<br><b>Magnitude:</b> 2.58<br><b>Depth:</b> 20.5599994659424 km</div>`)[0];
+                popup_e036783f87c593dab967749f6014dc5a.setContent(html_9e75feeeceb74f365073c38a44dcede3);
+            
+        
+
+        circle_marker_f19071805388f1fb01068880ac0dfa8f.bindPopup(popup_e036783f87c593dab967749f6014dc5a)
+        ;
+
+        
+    
+    
+            var circle_marker_951c8702f2bb5f70080472efe75c6302 = L.circleMarker(
+                [40.4095001220703, -124.691833496094],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.43, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_a2c165e796083159ae3b06500dd6d0d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b365d1fdc384cfda25d740f85b017d74 = $(`<div id="html_b365d1fdc384cfda25d740f85b017d74" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 36 km WNW of Petrolia, CA<br><b>Magnitude:</b> 2.81<br><b>Depth:</b> -0.189999997615814 km</div>`)[0];
+                popup_a2c165e796083159ae3b06500dd6d0d0.setContent(html_b365d1fdc384cfda25d740f85b017d74);
+            
+        
+
+        circle_marker_951c8702f2bb5f70080472efe75c6302.bindPopup(popup_a2c165e796083159ae3b06500dd6d0d0)
+        ;
+
+        
+    
+    
+            var circle_marker_e0b95d66de776cc8c387e39563607423 = L.circleMarker(
+                [40.3693351745605, -124.933670043945],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.850000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_773cc0a8736b936d6c1e938ff0fb5f7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19fcd2f5eb0e65bd062d87c782811010 = $(`<div id="html_19fcd2f5eb0e65bd062d87c782811010" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 55 km WNW of Petrolia, CA<br><b>Magnitude:</b> 3.95<br><b>Depth:</b> -0.109999999403954 km</div>`)[0];
+                popup_773cc0a8736b936d6c1e938ff0fb5f7a.setContent(html_19fcd2f5eb0e65bd062d87c782811010);
+            
+        
+
+        circle_marker_e0b95d66de776cc8c387e39563607423.bindPopup(popup_773cc0a8736b936d6c1e938ff0fb5f7a)
+        ;
+
+        
+    
+    
+            var circle_marker_f51f54a08a3f4ee3f3bbf1d5c80e3b9c = L.circleMarker(
+                [18.0075, -66.8513333333333],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.6499999999999995, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_f560fe5222296c33559a82051b3a9aa2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98e16bcffafa5e277897f15a456f1c15 = $(`<div id="html_98e16bcffafa5e277897f15a456f1c15" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 2 km ESE of Palomas, Puerto Rico<br><b>Magnitude:</b> 2.55<br><b>Depth:</b> 15 km</div>`)[0];
+                popup_f560fe5222296c33559a82051b3a9aa2.setContent(html_98e16bcffafa5e277897f15a456f1c15);
+            
+        
+
+        circle_marker_f51f54a08a3f4ee3f3bbf1d5c80e3b9c.bindPopup(popup_f560fe5222296c33559a82051b3a9aa2)
+        ;
+
+        
+    
+    
+            var circle_marker_746a4bac5e480cce0cd850c3bdc98a8b = L.circleMarker(
+                [51.0162, -177.4161],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.7, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_36d512f327bff6389f9a01affa214038 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abe22f3189ecf82959fe33066d4b2d1c = $(`<div id="html_abe22f3189ecf82959fe33066d4b2d1c" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 109 km SSW of Adak, Alaska<br><b>Magnitude:</b> 3.9<br><b>Depth:</b> 17.6 km</div>`)[0];
+                popup_36d512f327bff6389f9a01affa214038.setContent(html_abe22f3189ecf82959fe33066d4b2d1c);
+            
+        
+
+        circle_marker_746a4bac5e480cce0cd850c3bdc98a8b.bindPopup(popup_36d512f327bff6389f9a01affa214038)
+        ;
+
+        
+    
+    
+            var circle_marker_96491687ea6d590a6d2d3b03c0485422 = L.circleMarker(
+                [36.562, -89.6471666666667],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.120000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_75dae14d5c6a2d6c599067d165c316b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0182aef88095a3766e147e80716c9e40 = $(`<div id="html_0182aef88095a3766e147e80716c9e40" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 4 km W of Howardville, Missouri<br><b>Magnitude:</b> 3.04<br><b>Depth:</b> 7.85 km</div>`)[0];
+                popup_75dae14d5c6a2d6c599067d165c316b6.setContent(html_0182aef88095a3766e147e80716c9e40);
+            
+        
+
+        circle_marker_96491687ea6d590a6d2d3b03c0485422.bindPopup(popup_75dae14d5c6a2d6c599067d165c316b6)
+        ;
+
+        
+    
+    
+            var circle_marker_20c01418d42351aa02a13cd48707ff1c = L.circleMarker(
+                [50.9216, -177.4599],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.299999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_efa48b920361aea52a462fefb71cfd61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b8988e0344421b54773ea8703d366f1 = $(`<div id="html_9b8988e0344421b54773ea8703d366f1" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 120 km SSW of Adak, Alaska<br><b>Magnitude:</b> 5.1<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_efa48b920361aea52a462fefb71cfd61.setContent(html_9b8988e0344421b54773ea8703d366f1);
+            
+        
+
+        circle_marker_20c01418d42351aa02a13cd48707ff1c.bindPopup(popup_efa48b920361aea52a462fefb71cfd61)
+        ;
+
+        
+    
+    
+            var circle_marker_c6958e9b429c3ebc4e1a0763eb92219f = L.circleMarker(
+                [44.3345, -110.485166666667],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.89, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_7a35dc59221384a47dccd0c25821a0d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32ce09554315ad561600d3e7e233a8f0 = $(`<div id="html_32ce09554315ad561600d3e7e233a8f0" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 61 km SE of West Yellowstone, Montana<br><b>Magnitude:</b> 2.63<br><b>Depth:</b> 5.19 km</div>`)[0];
+                popup_7a35dc59221384a47dccd0c25821a0d8.setContent(html_32ce09554315ad561600d3e7e233a8f0);
+            
+        
+
+        circle_marker_c6958e9b429c3ebc4e1a0763eb92219f.bindPopup(popup_7a35dc59221384a47dccd0c25821a0d8)
+        ;
+
+        
+    
+    
+            var circle_marker_54264b6696ae3b7da0b3f92223d6a22a = L.circleMarker(
+                [-30.5679, 121.6173],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.7, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_409e0c40eb43a2dc760bd82ecf9b43af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb8e1120627a7fa07d820e463556edd2 = $(`<div id="html_eb8e1120627a7fa07d820e463556edd2" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 22 km NE of Hannans, Australia<br><b>Magnitude:</b> 3.9<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_409e0c40eb43a2dc760bd82ecf9b43af.setContent(html_eb8e1120627a7fa07d820e463556edd2);
+            
+        
+
+        circle_marker_54264b6696ae3b7da0b3f92223d6a22a.bindPopup(popup_409e0c40eb43a2dc760bd82ecf9b43af)
+        ;
+
+        
+    
+    
+            var circle_marker_94ea48adeb2a026fab6ff13da4569fef = L.circleMarker(
+                [50.8236, -177.4069],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.5, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_fd6e9938503d36796b272a1f3c4f4c7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_025ec6ab3473bdf0858f18b0ce81b977 = $(`<div id="html_025ec6ab3473bdf0858f18b0ce81b977" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 128 km SSW of Adak, Alaska<br><b>Magnitude:</b> 4.5<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_fd6e9938503d36796b272a1f3c4f4c7e.setContent(html_025ec6ab3473bdf0858f18b0ce81b977);
+            
+        
+
+        circle_marker_94ea48adeb2a026fab6ff13da4569fef.bindPopup(popup_fd6e9938503d36796b272a1f3c4f4c7e)
+        ;
+
+        
+    
+    
+            var circle_marker_54f619d4dde278f7981cb77a21703507 = L.circleMarker(
+                [18.0715, -61.175],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_e6a87cae410f50d8683f7bfa2b5b6ed9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8485841ef540d526437be567bbd81dfc = $(`<div id="html_8485841ef540d526437be567bbd81dfc" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 83 km NE of Codrington, Antigua and Barbuda<br><b>Magnitude:</b> 4<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_e6a87cae410f50d8683f7bfa2b5b6ed9.setContent(html_8485841ef540d526437be567bbd81dfc);
+            
+        
+
+        circle_marker_54f619d4dde278f7981cb77a21703507.bindPopup(popup_e6a87cae410f50d8683f7bfa2b5b6ed9)
+        ;
+
+        
+    
+    
+            var circle_marker_756d38a6a574d72599f23629ac28fc18 = L.circleMarker(
+                [50.9115, -177.5326],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_4fa34d318435777f7373d1fe1f9514ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44ae64d99908877fb6634ca94eecb681 = $(`<div id="html_44ae64d99908877fb6634ca94eecb681" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 124 km SSW of Adak, Alaska<br><b>Magnitude:</b> 3<br><b>Depth:</b> 13.1 km</div>`)[0];
+                popup_4fa34d318435777f7373d1fe1f9514ec.setContent(html_44ae64d99908877fb6634ca94eecb681);
+            
+        
+
+        circle_marker_756d38a6a574d72599f23629ac28fc18.bindPopup(popup_4fa34d318435777f7373d1fe1f9514ec)
+        ;
+
+        
+    
+    
+            var circle_marker_99e405811d7b0d24d796a321eef5f1a3 = L.circleMarker(
+                [50.826, -177.4915],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.7, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_28a094e0bc8c4c0400ccb9504e970808 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3cb1ae86f7af1006cb0e65b3f5cab51 = $(`<div id="html_a3cb1ae86f7af1006cb0e65b3f5cab51" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 131 km SSW of Adak, Alaska<br><b>Magnitude:</b> 3.9<br><b>Depth:</b> 13.678 km</div>`)[0];
+                popup_28a094e0bc8c4c0400ccb9504e970808.setContent(html_a3cb1ae86f7af1006cb0e65b3f5cab51);
+            
+        
+
+        circle_marker_99e405811d7b0d24d796a321eef5f1a3.bindPopup(popup_28a094e0bc8c4c0400ccb9504e970808)
+        ;
+
+        
+    
+    
+            var circle_marker_95280c3af3a8f361752c60122fa77846 = L.circleMarker(
+                [13.2206, -87.875],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.799999999999997, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_2e4223feda593909610416940a15c2da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfcefd895d5f6dbe8e0c607361b47ac5 = $(`<div id="html_bfcefd895d5f6dbe8e0c607361b47ac5" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 9 km S of Conchagua, El Salvador<br><b>Magnitude:</b> 5.6<br><b>Depth:</b> 15.366 km</div>`)[0];
+                popup_2e4223feda593909610416940a15c2da.setContent(html_bfcefd895d5f6dbe8e0c607361b47ac5);
+            
+        
+
+        circle_marker_95280c3af3a8f361752c60122fa77846.bindPopup(popup_2e4223feda593909610416940a15c2da)
+        ;
+
+        
+    
+    
+            var circle_marker_5c0d1099d3c29d48cf9efd74d4a8a895 = L.circleMarker(
+                [50.7915, -177.5226],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.299999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_f2f543f3d932cf9ef32196317d43bf34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2695bfab2c285429d326e2cd7e26cc4c = $(`<div id="html_2695bfab2c285429d326e2cd7e26cc4c" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 135 km SSW of Adak, Alaska<br><b>Magnitude:</b> 4.1<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_f2f543f3d932cf9ef32196317d43bf34.setContent(html_2695bfab2c285429d326e2cd7e26cc4c);
+            
+        
+
+        circle_marker_5c0d1099d3c29d48cf9efd74d4a8a895.bindPopup(popup_f2f543f3d932cf9ef32196317d43bf34)
+        ;
+
+        
+    
+    
+            var circle_marker_9f7aad27793ffdc0debf2327d9f31c75 = L.circleMarker(
+                [50.8283, -177.4666],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.600000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_2d8fc84c0b110ca771150c8c213d40a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31626dff96e7837eff3913e716f62770 = $(`<div id="html_31626dff96e7837eff3913e716f62770" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 129 km SSW of Adak, Alaska<br><b>Magnitude:</b> 5.2<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_2d8fc84c0b110ca771150c8c213d40a2.setContent(html_31626dff96e7837eff3913e716f62770);
+            
+        
+
+        circle_marker_9f7aad27793ffdc0debf2327d9f31c75.bindPopup(popup_2d8fc84c0b110ca771150c8c213d40a2)
+        ;
+
+        
+    
+    
+            var circle_marker_bd491b7efd62c5b0df6e7cc98b317d92 = L.circleMarker(
+                [50.7977, -177.4855],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.600000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_40c65390d6e0772e0f80352679056fa3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee3c0480bf29b558e574e7b6e16eb522 = $(`<div id="html_ee3c0480bf29b558e574e7b6e16eb522" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 133 km SSW of Adak, Alaska<br><b>Magnitude:</b> 4.2<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_40c65390d6e0772e0f80352679056fa3.setContent(html_ee3c0480bf29b558e574e7b6e16eb522);
+            
+        
+
+        circle_marker_bd491b7efd62c5b0df6e7cc98b317d92.bindPopup(popup_40c65390d6e0772e0f80352679056fa3)
+        ;
+
+        
+    
+    
+            var circle_marker_f5f82578359f924bb09825a231e4bb70 = L.circleMarker(
+                [50.8605, -177.5084],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.799999999999997, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_430db00f4fdee49c2912f6b9c619b73a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d17f6b72e381179af0ed1674beba2f82 = $(`<div id="html_d17f6b72e381179af0ed1674beba2f82" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 128 km SSW of Adak, Alaska<br><b>Magnitude:</b> 5.6<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_430db00f4fdee49c2912f6b9c619b73a.setContent(html_d17f6b72e381179af0ed1674beba2f82);
+            
+        
+
+        circle_marker_f5f82578359f924bb09825a231e4bb70.bindPopup(popup_430db00f4fdee49c2912f6b9c619b73a)
+        ;
+
+        
+    
+    
+            var circle_marker_9f23050123c552c8bac8a2b21b95a864 = L.circleMarker(
+                [50.8447, -177.4621],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.899999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_c22b25b9b50df9868945d6c2dbcee7ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_475f73acad6d9b1a4f843496b67c55ab = $(`<div id="html_475f73acad6d9b1a4f843496b67c55ab" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 128 km SSW of Adak, Alaska<br><b>Magnitude:</b> 5.3<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_c22b25b9b50df9868945d6c2dbcee7ee.setContent(html_475f73acad6d9b1a4f843496b67c55ab);
+            
+        
+
+        circle_marker_9f23050123c552c8bac8a2b21b95a864.bindPopup(popup_c22b25b9b50df9868945d6c2dbcee7ee)
+        ;
+
+        
+    
+    
+            var circle_marker_24631cd1d374c9df8cb9ad132ebf9d2a = L.circleMarker(
+                [50.9162, -177.5785],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.800000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_e5dcd2914a96feeaa3fadd8ae215ed8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a96d780066f3d6378194331ca281458 = $(`<div id="html_8a96d780066f3d6378194331ca281458" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 125 km SSW of Adak, Alaska<br><b>Magnitude:</b> 2.6<br><b>Depth:</b> 0.2 km</div>`)[0];
+                popup_e5dcd2914a96feeaa3fadd8ae215ed8d.setContent(html_8a96d780066f3d6378194331ca281458);
+            
+        
+
+        circle_marker_24631cd1d374c9df8cb9ad132ebf9d2a.bindPopup(popup_e5dcd2914a96feeaa3fadd8ae215ed8d)
+        ;
+
+        
+    
+    
+            var circle_marker_70191e5593108c2f837fa1f152468211 = L.circleMarker(
+                [50.9072, -177.5274],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.1, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_71eeedb4c15ca13c445db6ab0715b931 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14e29bfc4ffe5a8b0ec950cc1398bcc2 = $(`<div id="html_14e29bfc4ffe5a8b0ec950cc1398bcc2" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 124 km SSW of Adak, Alaska<br><b>Magnitude:</b> 5.7<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_71eeedb4c15ca13c445db6ab0715b931.setContent(html_14e29bfc4ffe5a8b0ec950cc1398bcc2);
+            
+        
+
+        circle_marker_70191e5593108c2f837fa1f152468211.bindPopup(popup_71eeedb4c15ca13c445db6ab0715b931)
+        ;
+
+        
+    
+    
+            var circle_marker_e2f4ffd46b5164a5a339c932fd8c2418 = L.circleMarker(
+                [50.8103, -177.4949],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.700000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_80f6770ea5ff1e05e6891290ff385443 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abb1bb9b537fe9ce7a14e8452a61fd25 = $(`<div id="html_abb1bb9b537fe9ce7a14e8452a61fd25" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 132 km SSW of Adak, Alaska<br><b>Magnitude:</b> 4.9<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_80f6770ea5ff1e05e6891290ff385443.setContent(html_abb1bb9b537fe9ce7a14e8452a61fd25);
+            
+        
+
+        circle_marker_e2f4ffd46b5164a5a339c932fd8c2418.bindPopup(popup_80f6770ea5ff1e05e6891290ff385443)
+        ;
+
+        
+    
+    
+            var circle_marker_ea455eebcbaa399a124959cd7b7c6191 = L.circleMarker(
+                [50.8247, -177.1322],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.2, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_1d172773922a539c5a0b5f7f5b4fafd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67a3d6f2c5bbfbeb4aa0d493806f7c46 = $(`<div id="html_67a3d6f2c5bbfbeb4aa0d493806f7c46" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 121 km SSW of Adak, Alaska<br><b>Magnitude:</b> 3.4<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_1d172773922a539c5a0b5f7f5b4fafd7.setContent(html_67a3d6f2c5bbfbeb4aa0d493806f7c46);
+            
+        
+
+        circle_marker_ea455eebcbaa399a124959cd7b7c6191.bindPopup(popup_1d172773922a539c5a0b5f7f5b4fafd7)
+        ;
+
+        
+    
+    
+            var circle_marker_edbb3fd5054c5363614f42876f6c720b = L.circleMarker(
+                [50.7067, -177.415],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.600000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_a48c1feb0847dd74fcf5842bffa70ab1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21f6ff24a70dfcd42fb93d046fba8c58 = $(`<div id="html_21f6ff24a70dfcd42fb93d046fba8c58" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 140 km SSW of Adak, Alaska<br><b>Magnitude:</b> 4.2<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_a48c1feb0847dd74fcf5842bffa70ab1.setContent(html_21f6ff24a70dfcd42fb93d046fba8c58);
+            
+        
+
+        circle_marker_edbb3fd5054c5363614f42876f6c720b.bindPopup(popup_a48c1feb0847dd74fcf5842bffa70ab1)
+        ;
+
+        
+    
+    
+            var circle_marker_cda92e370580c20b4e2d19bfe17a368c = L.circleMarker(
+                [40.3296661376953, -124.495162963867],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.86, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_0b763683110bc7eeb6de5066159c4ee0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0726191cc84fd78557dfdb4d443093b0 = $(`<div id="html_0726191cc84fd78557dfdb4d443093b0" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 18 km WNW of Petrolia, CA<br><b>Magnitude:</b> 2.62<br><b>Depth:</b> 11.9700002670288 km</div>`)[0];
+                popup_0b763683110bc7eeb6de5066159c4ee0.setContent(html_0726191cc84fd78557dfdb4d443093b0);
+            
+        
+
+        circle_marker_cda92e370580c20b4e2d19bfe17a368c.bindPopup(popup_0b763683110bc7eeb6de5066159c4ee0)
+        ;
+
+        
+    
+    
+            var circle_marker_ea1588cddfbc2b49d75d5713a0dc8fd9 = L.circleMarker(
+                [50.8822, -177.224],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.600000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_d469bc508d1994bca06abbc9bb08ded9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1905af323cfbf02a00f2873ff2fff511 = $(`<div id="html_1905af323cfbf02a00f2873ff2fff511" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 117 km SSW of Adak, Alaska<br><b>Magnitude:</b> 4.2<br><b>Depth:</b> 17.919 km</div>`)[0];
+                popup_d469bc508d1994bca06abbc9bb08ded9.setContent(html_1905af323cfbf02a00f2873ff2fff511);
+            
+        
+
+        circle_marker_ea1588cddfbc2b49d75d5713a0dc8fd9.bindPopup(popup_d469bc508d1994bca06abbc9bb08ded9)
+        ;
+
+        
+    
+    
+            var circle_marker_beb0852c074c544430f01cc549fa050b = L.circleMarker(
+                [40.4090003967285, -124.907165527344],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.77, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_8e03072cc69ddb5b909ebd084ed11705 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ac982e14891e5076f8980a09869b77c = $(`<div id="html_8ac982e14891e5076f8980a09869b77c" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 54 km WNW of Petrolia, CA<br><b>Magnitude:</b> 3.59<br><b>Depth:</b> -0.189999997615814 km</div>`)[0];
+                popup_8e03072cc69ddb5b909ebd084ed11705.setContent(html_8ac982e14891e5076f8980a09869b77c);
+            
+        
+
+        circle_marker_beb0852c074c544430f01cc549fa050b.bindPopup(popup_8e03072cc69ddb5b909ebd084ed11705)
+        ;
+
+        
+    
+    
+            var circle_marker_a12fb3106bb5a73093c670b4557a8499 = L.circleMarker(
+                [50.922, -177.4105],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.299999999999997, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_bf2f0ca4a72099f910e958a0aae727d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae8a79576f282bcee1c02517585efd61 = $(`<div id="html_ae8a79576f282bcee1c02517585efd61" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 118 km SSW of Adak, Alaska<br><b>Magnitude:</b> 6.1<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_bf2f0ca4a72099f910e958a0aae727d0.setContent(html_ae8a79576f282bcee1c02517585efd61);
+            
+        
+
+        circle_marker_a12fb3106bb5a73093c670b4557a8499.bindPopup(popup_bf2f0ca4a72099f910e958a0aae727d0)
+        ;
+
+        
+    
+    
+            var circle_marker_97284d997e6caf1fcc542990726c7d4c = L.circleMarker(
+                [51.0173, -177.1608],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.5, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_62ddba92929a447b28369f27d1c16357 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b98f756d265e2756def0bca52e4bfcd1 = $(`<div id="html_b98f756d265e2756def0bca52e4bfcd1" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 102 km SSW of Adak, Alaska<br><b>Magnitude:</b> 4.5<br><b>Depth:</b> 26.2 km</div>`)[0];
+                popup_62ddba92929a447b28369f27d1c16357.setContent(html_b98f756d265e2756def0bca52e4bfcd1);
+            
+        
+
+        circle_marker_97284d997e6caf1fcc542990726c7d4c.bindPopup(popup_62ddba92929a447b28369f27d1c16357)
+        ;
+
+        
+    
+    
+            var circle_marker_fc106406960d499d1b43a7f036e7393d = L.circleMarker(
+                [19.105, -65.2971666666667],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.11, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_1aa1904e342e3b643087a75d80f07d3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf1efa6b9f1fdd7176c138e28249f3a9 = $(`<div id="html_cf1efa6b9f1fdd7176c138e28249f3a9" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 88 km N of Culebra, Puerto Rico<br><b>Magnitude:</b> 3.37<br><b>Depth:</b> 48.93 km</div>`)[0];
+                popup_1aa1904e342e3b643087a75d80f07d3b.setContent(html_cf1efa6b9f1fdd7176c138e28249f3a9);
+            
+        
+
+        circle_marker_fc106406960d499d1b43a7f036e7393d.bindPopup(popup_1aa1904e342e3b643087a75d80f07d3b)
+        ;
+
+        
+    
+    
+            var circle_marker_37a1224f1d4ec94bd938f47f9ed93204 = L.circleMarker(
+                [50.908, -177.3179],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.600000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_e1082400d9eb5722fffe41cc146f50fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6764eb0b76c02c7255c350a81dba2168 = $(`<div id="html_6764eb0b76c02c7255c350a81dba2168" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 117 km SSW of Adak, Alaska<br><b>Magnitude:</b> 5.2<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_e1082400d9eb5722fffe41cc146f50fe.setContent(html_6764eb0b76c02c7255c350a81dba2168);
+            
+        
+
+        circle_marker_37a1224f1d4ec94bd938f47f9ed93204.bindPopup(popup_e1082400d9eb5722fffe41cc146f50fe)
+        ;
+
+        
+    
+    
+            var circle_marker_f36cc5342b14299789b14ded1c7baa53 = L.circleMarker(
+                [50.9758, -177.1836],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.600000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_e60f0be1940ed5f62229f0d2e1e0ddff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97d824ed03e6dbc521437c6255ea6ddd = $(`<div id="html_97d824ed03e6dbc521437c6255ea6ddd" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 106 km SSW of Adak, Alaska<br><b>Magnitude:</b> 5.2<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_e60f0be1940ed5f62229f0d2e1e0ddff.setContent(html_97d824ed03e6dbc521437c6255ea6ddd);
+            
+        
+
+        circle_marker_f36cc5342b14299789b14ded1c7baa53.bindPopup(popup_e60f0be1940ed5f62229f0d2e1e0ddff)
+        ;
+
+        
+    
+    
+            var circle_marker_2e47ca1dfa3941b96f04803305ae0384 = L.circleMarker(
+                [50.8297, -177.2432],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_b75cd46a3e23f8b2631660d006d00472 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0dc26669bec8784049ce0f28d6b0c94a = $(`<div id="html_0dc26669bec8784049ce0f28d6b0c94a" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 123 km SSW of Adak, Alaska<br><b>Magnitude:</b> 5<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_b75cd46a3e23f8b2631660d006d00472.setContent(html_0dc26669bec8784049ce0f28d6b0c94a);
+            
+        
+
+        circle_marker_2e47ca1dfa3941b96f04803305ae0384.bindPopup(popup_b75cd46a3e23f8b2631660d006d00472)
+        ;
+
+        
+    
+    
+            var circle_marker_a18485731ff625915eade6576f9da586 = L.circleMarker(
+                [51.0067, -177.155],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.9, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_54e248b73d21dc4a2e0a9fdbfd3a9d43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4104e8a83f675a38ee1602bdea02d498 = $(`<div id="html_4104e8a83f675a38ee1602bdea02d498" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 103 km SSW of Adak, Alaska<br><b>Magnitude:</b> 6.3<br><b>Depth:</b> 19 km</div>`)[0];
+                popup_54e248b73d21dc4a2e0a9fdbfd3a9d43.setContent(html_4104e8a83f675a38ee1602bdea02d498);
+            
+        
+
+        circle_marker_a18485731ff625915eade6576f9da586.bindPopup(popup_54e248b73d21dc4a2e0a9fdbfd3a9d43)
+        ;
+
+        
+    
+    
+            var circle_marker_914c6388e75f4b2e7f6feeb10105a886 = L.circleMarker(
+                [40.2911682128906, -124.988670349121],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.25, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_b59b278c853b8a72b870e67ee359f7cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87071113ee554d269ccc4cdbbef699cd = $(`<div id="html_87071113ee554d269ccc4cdbbef699cd" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 60 km W of Petrolia, CA<br><b>Magnitude:</b> 2.75<br><b>Depth:</b> 24.5900001525879 km</div>`)[0];
+                popup_b59b278c853b8a72b870e67ee359f7cf.setContent(html_87071113ee554d269ccc4cdbbef699cd);
+            
+        
+
+        circle_marker_914c6388e75f4b2e7f6feeb10105a886.bindPopup(popup_b59b278c853b8a72b870e67ee359f7cf)
+        ;
+
+        
+    
+    
+            var circle_marker_cd74657f085e9221160d4b811fa41b99 = L.circleMarker(
+                [32.259, -101.937],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.5, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_8deb4e3c948808169696a0eabdd9e1cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa0acdd13811c7694d3950716bc82d1b = $(`<div id="html_fa0acdd13811c7694d3950716bc82d1b" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 20 km NW of Stanton, Texas<br><b>Magnitude:</b> 2.5<br><b>Depth:</b> 8.2764 km</div>`)[0];
+                popup_8deb4e3c948808169696a0eabdd9e1cc.setContent(html_fa0acdd13811c7694d3950716bc82d1b);
+            
+        
+
+        circle_marker_cd74657f085e9221160d4b811fa41b99.bindPopup(popup_8deb4e3c948808169696a0eabdd9e1cc)
+        ;
+
+        
+    
+    
+            var circle_marker_b021178588e1268270236710b8a63d6b = L.circleMarker(
+                [40.295166015625, -124.575836181641],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.7, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_74aadffaa237945848f3c17ebc20041c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc03f7f2b801a7dc03d6a0fddee5425c = $(`<div id="html_dc03f7f2b801a7dc03d6a0fddee5425c" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 25 km W of Petrolia, CA<br><b>Magnitude:</b> 2.9<br><b>Depth:</b> 10.1899995803833 km</div>`)[0];
+                popup_74aadffaa237945848f3c17ebc20041c.setContent(html_dc03f7f2b801a7dc03d6a0fddee5425c);
+            
+        
+
+        circle_marker_b021178588e1268270236710b8a63d6b.bindPopup(popup_74aadffaa237945848f3c17ebc20041c)
+        ;
+
+        
+    
+    
+            var circle_marker_bc619922d38ff35d83ab7164b1c5bc4f = L.circleMarker(
+                [50.9124, -177.2709],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.399999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_084736843473d22630587b0486d0b1b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37455f453e6fd3b6ae6416abe052a1bc = $(`<div id="html_37455f453e6fd3b6ae6416abe052a1bc" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 115 km SSW of Adak, Alaska<br><b>Magnitude:</b> 4.8<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_084736843473d22630587b0486d0b1b2.setContent(html_37455f453e6fd3b6ae6416abe052a1bc);
+            
+        
+
+        circle_marker_bc619922d38ff35d83ab7164b1c5bc4f.bindPopup(popup_084736843473d22630587b0486d0b1b2)
+        ;
+
+        
+    
+    
+            var circle_marker_d930c07920eac9b66d19049019c3ba22 = L.circleMarker(
+                [36.4966659545898, -121.077003479004],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.41, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_75cec7f04b3d5bad46125710faa11725 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f448b4a4ace275440632ecc551e725f = $(`<div id="html_4f448b4a4ace275440632ecc551e725f" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 7 km SE of Pinnacles, CA<br><b>Magnitude:</b> 2.47<br><b>Depth:</b> 5.23000001907349 km</div>`)[0];
+                popup_75cec7f04b3d5bad46125710faa11725.setContent(html_4f448b4a4ace275440632ecc551e725f);
+            
+        
+
+        circle_marker_d930c07920eac9b66d19049019c3ba22.bindPopup(popup_75cec7f04b3d5bad46125710faa11725)
+        ;
+
+        
+    
+    
+            var circle_marker_e7e19e09ec9b861eb73f5bde6f1a9de7 = L.circleMarker(
+                [-8.7854, 158.1099],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.899999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_68c3d4b792aead7251a101bf2c185929 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8a515e091277d481ef7f497116a08ab = $(`<div id="html_b8a515e091277d481ef7f497116a08ab" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 158 km ESE of Gizo, Solomon Islands<br><b>Magnitude:</b> 4.3<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_68c3d4b792aead7251a101bf2c185929.setContent(html_b8a515e091277d481ef7f497116a08ab);
+            
+        
+
+        circle_marker_e7e19e09ec9b861eb73f5bde6f1a9de7.bindPopup(popup_68c3d4b792aead7251a101bf2c185929)
+        ;
+
+        
+    
+    
+            var circle_marker_8b9755edb26d6059244f422cde7dfe76 = L.circleMarker(
+                [40.3121681213379, -124.707496643066],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.98, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_af30ccecef3064ad618ef94bd4abf525 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ef1b293b4b9c58732435c46fe36e4a6 = $(`<div id="html_7ef1b293b4b9c58732435c46fe36e4a6" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 36 km W of Petrolia, CA<br><b>Magnitude:</b> 2.66<br><b>Depth:</b> 8.72999954223633 km</div>`)[0];
+                popup_af30ccecef3064ad618ef94bd4abf525.setContent(html_7ef1b293b4b9c58732435c46fe36e4a6);
+            
+        
+
+        circle_marker_8b9755edb26d6059244f422cde7dfe76.bindPopup(popup_af30ccecef3064ad618ef94bd4abf525)
+        ;
+
+        
+    
+    
+            var circle_marker_9291bed8c4c06dd4c73da37942a59b05 = L.circleMarker(
+                [40.4391670227051, -124.833503723145],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.62, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_05f6495ccf8abede145b3e8b3a26d0ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33dbb6bab93fe6f824da493e32d2954a = $(`<div id="html_33dbb6bab93fe6f824da493e32d2954a" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 48 km WNW of Petrolia, CA<br><b>Magnitude:</b> 2.54<br><b>Depth:</b> 1.80999994277954 km</div>`)[0];
+                popup_05f6495ccf8abede145b3e8b3a26d0ee.setContent(html_33dbb6bab93fe6f824da493e32d2954a);
+            
+        
+
+        circle_marker_9291bed8c4c06dd4c73da37942a59b05.bindPopup(popup_05f6495ccf8abede145b3e8b3a26d0ee)
+        ;
+
+        
+    
+    
+            var circle_marker_1701c1581643a6c04050eb717790e83c = L.circleMarker(
+                [50.9064, -177.3686],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.4, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_d8292f68bd4d39b93cb75376a7149a1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8694b8e32a2d18e12219761fcb59d86d = $(`<div id="html_8694b8e32a2d18e12219761fcb59d86d" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 119 km SSW of Adak, Alaska<br><b>Magnitude:</b> 5.8<br><b>Depth:</b> 12.395 km</div>`)[0];
+                popup_d8292f68bd4d39b93cb75376a7149a1e.setContent(html_8694b8e32a2d18e12219761fcb59d86d);
+            
+        
+
+        circle_marker_1701c1581643a6c04050eb717790e83c.bindPopup(popup_d8292f68bd4d39b93cb75376a7149a1e)
+        ;
+
+        
+    
+    
+            var circle_marker_6012c5f435309affab1405ae2bbd06c6 = L.circleMarker(
+                [51.1131, -177.2688],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.200000000000003, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_4cdb26d5d0ca9a868cc6576f85c68243 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0cef763eb66d0e19a82986d1b81564a = $(`<div id="html_a0cef763eb66d0e19a82986d1b81564a" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 95 km SSW of Adak, Alaska<br><b>Magnitude:</b> 5.4<br><b>Depth:</b> 24.442 km</div>`)[0];
+                popup_4cdb26d5d0ca9a868cc6576f85c68243.setContent(html_a0cef763eb66d0e19a82986d1b81564a);
+            
+        
+
+        circle_marker_6012c5f435309affab1405ae2bbd06c6.bindPopup(popup_4cdb26d5d0ca9a868cc6576f85c68243)
+        ;
+
+        
+    
+    
+            var circle_marker_65e1d4f0a024a37e7ee22aa72f1a38f0 = L.circleMarker(
+                [-9.122, -109.734],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.299999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_13e9f78bbb158e039165eaab1492cd2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a26d93788d088746e4d59f00359ce68 = $(`<div id="html_1a26d93788d088746e4d59f00359ce68" style="width: 100.0%; height: 100.0%;"><b>Location:</b> central East Pacific Rise<br><b>Magnitude:</b> 5.1<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_13e9f78bbb158e039165eaab1492cd2d.setContent(html_1a26d93788d088746e4d59f00359ce68);
+            
+        
+
+        circle_marker_65e1d4f0a024a37e7ee22aa72f1a38f0.bindPopup(popup_13e9f78bbb158e039165eaab1492cd2d)
+        ;
+
+        
+    
+    
+            var circle_marker_1d14b0c585ca931723ef67c3b39b5042 = L.circleMarker(
+                [51.1109, -177.294],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.700000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_1998d9f6ee697848901c3b7046f9c39b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a30c543ab616b2ade40b7c173d14a9d = $(`<div id="html_7a30c543ab616b2ade40b7c173d14a9d" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 96 km SSW of Adak, Alaska<br><b>Magnitude:</b> 4.9<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_1998d9f6ee697848901c3b7046f9c39b.setContent(html_7a30c543ab616b2ade40b7c173d14a9d);
+            
+        
+
+        circle_marker_1d14b0c585ca931723ef67c3b39b5042.bindPopup(popup_1998d9f6ee697848901c3b7046f9c39b)
+        ;
+
+        
+    
+    
+            var circle_marker_cf4962ca81bad2dad9cf3c66daeb829d = L.circleMarker(
+                [50.9136, -177.1712],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.399999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_e872c5fa07be3a5c4cf2796bdc001fe7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f057c6e395419993dbfc0d4b3e75f0d = $(`<div id="html_0f057c6e395419993dbfc0d4b3e75f0d" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 113 km SSW of Adak, Alaska<br><b>Magnitude:</b> 3.8<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_e872c5fa07be3a5c4cf2796bdc001fe7.setContent(html_0f057c6e395419993dbfc0d4b3e75f0d);
+            
+        
+
+        circle_marker_cf4962ca81bad2dad9cf3c66daeb829d.bindPopup(popup_e872c5fa07be3a5c4cf2796bdc001fe7)
+        ;
+
+        
+    
+    
+            var circle_marker_dad23406c021429b99e25634a6c8f174 = L.circleMarker(
+                [50.9397, -177.308],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.200000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_964108777dfd2e90f6999b9af3db5e31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3c8744eae5e94249274f0fc4fa17595 = $(`<div id="html_a3c8744eae5e94249274f0fc4fa17595" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 114 km SSW of Adak, Alaska<br><b>Magnitude:</b> 4.4<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_964108777dfd2e90f6999b9af3db5e31.setContent(html_a3c8744eae5e94249274f0fc4fa17595);
+            
+        
+
+        circle_marker_dad23406c021429b99e25634a6c8f174.bindPopup(popup_964108777dfd2e90f6999b9af3db5e31)
+        ;
+
+        
+    
+    
+            var circle_marker_3f4e31e1097b8f15eeeca73d9cccb117 = L.circleMarker(
+                [50.851, -177.229],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_e0ad754007cfcf5f689444a172f55054 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aeb524140ad54dfc8bb30b182a0445e0 = $(`<div id="html_aeb524140ad54dfc8bb30b182a0445e0" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 121 km SSW of Adak, Alaska<br><b>Magnitude:</b> 5<br><b>Depth:</b> 10 km</div>`)[0];
+                popup_e0ad754007cfcf5f689444a172f55054.setContent(html_aeb524140ad54dfc8bb30b182a0445e0);
+            
+        
+
+        circle_marker_3f4e31e1097b8f15eeeca73d9cccb117.bindPopup(popup_e0ad754007cfcf5f689444a172f55054)
+        ;
+
+        
+    
+    
+            var circle_marker_8409c80762a49f4f0e568d501418cc95 = L.circleMarker(
+                [50.952, -177.3377],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.9, "stroke": true, "weight": 3}
+            ).addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+    
+        var popup_e4bc8a7000bdef959b65a92e7c31ea13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1581e0af200e1af633bd9003e76f68e7 = $(`<div id="html_1581e0af200e1af633bd9003e76f68e7" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 113 km SSW of Adak, Alaska<br><b>Magnitude:</b> 6.3<br><b>Depth:</b> 18 km</div>`)[0];
+                popup_e4bc8a7000bdef959b65a92e7c31ea13.setContent(html_1581e0af200e1af633bd9003e76f68e7);
+            
+        
+
+        circle_marker_8409c80762a49f4f0e568d501418cc95.bindPopup(popup_e4bc8a7000bdef959b65a92e7c31ea13)
+        ;
+
+        
+    
+    
+            var heat_map_22a862be3b855b003586b5be181c2ad2 = L.heatLayer(
+                [[50.8599, -177.7299, 3.3], [18.5571666666667, -66.152, 3], [39.6983337402344, -123.134498596191, 2.81], [50.9985, -177.4954, 3.4], [54.1694, -162.4745, 5], [-9.2495, 66.7514, 5.7], [50.9787, -177.5087, 3.6], [50.8638, -177.5754, 3.3], [50.9476, -177.5363, 2.5], [51.0142, -177.5177, 5.3], [31.4093333, -115.465, 2.81], [51.0366, -177.5501, 5.7], [-20.2478, -70.339, 4.9], [40.2755012512207, -124.557830810547, 2.67], [50.7357, -177.5072, 2.7], [-35.5068, -106.2525, 5], [13.2295, -87.7383, 4.7], [36.6464996337891, -121.283332824707, 2.46], [44.3267, 147.6155, 4.9], [40.3946647644043, -124.918830871582, 3.02], [58.536, -152.2387, 2.7], [40.2723350524902, -124.654998779297, 2.69], [40.3655014038086, -124.738334655762, 3.33], [44.494, 7.0343, 3.9], [40.341667175293, -124.985832214355, 2.48], [-0.9861, 99.5542, 4.8], [19.6812, -70.4604, 4.1], [50.8648, -177.4831, 2.7], [40.420166015625, -124.782333374023, 3.56], [40.2939987182617, -124.519165039062, 3.33], [-6.6413, 103.8588, 5.1], [19.0938333333333, -64.8218333333333, 3.35], [40.2944984436035, -124.494499206543, 2.74], [40.3359985351562, -124.681831359863, 2.58], [40.4095001220703, -124.691833496094, 2.81], [40.3693351745605, -124.933670043945, 3.95], [18.0075, -66.8513333333333, 2.55], [51.0162, -177.4161, 3.9], [36.562, -89.6471666666667, 3.04], [50.9216, -177.4599, 5.1], [44.3345, -110.485166666667, 2.63], [-30.5679, 121.6173, 3.9], [50.8236, -177.4069, 4.5], [18.0715, -61.175, 4], [50.9115, -177.5326, 3], [50.826, -177.4915, 3.9], [13.2206, -87.875, 5.6], [50.7915, -177.5226, 4.1], [50.8283, -177.4666, 5.2], [50.7977, -177.4855, 4.2], [50.8605, -177.5084, 5.6], [50.8447, -177.4621, 5.3], [50.9162, -177.5785, 2.6], [50.9072, -177.5274, 5.7], [50.8103, -177.4949, 4.9], [50.8247, -177.1322, 3.4], [50.7067, -177.415, 4.2], [40.3296661376953, -124.495162963867, 2.62], [50.8822, -177.224, 4.2], [40.4090003967285, -124.907165527344, 3.59], [50.922, -177.4105, 6.1], [51.0173, -177.1608, 4.5], [19.105, -65.2971666666667, 3.37], [50.908, -177.3179, 5.2], [50.9758, -177.1836, 5.2], [50.8297, -177.2432, 5], [51.0067, -177.155, 6.3], [40.2911682128906, -124.988670349121, 2.75], [32.259, -101.937, 2.5], [40.295166015625, -124.575836181641, 2.9], [50.9124, -177.2709, 4.8], [36.4966659545898, -121.077003479004, 2.47], [-8.7854, 158.1099, 4.3], [40.3121681213379, -124.707496643066, 2.66], [40.4391670227051, -124.833503723145, 2.54], [50.9064, -177.3686, 5.8], [51.1131, -177.2688, 5.4], [-9.122, -109.734, 5.1], [51.1109, -177.294, 4.9], [50.9136, -177.1712, 3.8], [50.9397, -177.308, 4.4], [50.851, -177.229, 5], [50.952, -177.3377, 6.3]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            );
+        
+    
+            heat_map_22a862be3b855b003586b5be181c2ad2.addTo(map_79b1e0e4cba91ed28da04f756700279b);
+        
+</script>
+</html>
